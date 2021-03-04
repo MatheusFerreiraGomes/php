@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>English Swift</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="css/mcx.css" />
+		<link rel="stylesheet" href="css/NaoSelecionavel.css" />
+		<script src="cordova.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/mcx.js"></script>
+		<script src="js/standard.js"></script>
+		<script src="js/list.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/dialog.js"></script>
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/translater.css" />
+		<script src="js/translater.js"></script>
+	</head>
+	<body>
+		<div id="menu">
+			<table>
+				<tr>
+					<td id="icon">
+						<i class="fa fa-angle-left"></i>
+					</td>
+					<td class="text">Tradutor de palavras</td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<br/>
+			<p>Aqui você pode traduzir qualquer palavra ou expressão que for aprendido na English Swift.</p>
+			<br/>
+			<form id="translate">
+				<label>
+					<p>Palavra ou expressão</p>
+					<table>
+						<tr>
+							<td id="field"><input type="text" placeholder="Digite a palavra ou expressão" id="word"/></td>
+							<td id="icon"><i class="fa fa-microphone"></i></td>
+						</tr>
+					</table>
+				</label>
+				
+			</form>
+			<br/>
+			<table id="options">
+				<tr>
+					<td class="text" id="from">Inglês</td>
+					<td class="waves-effect" id="change"><i class="fa fa-exchange"></i></td>
+					<td class="text" id="to">Português</td>
+				</tr>
+			</table>
+			<br/>
+			<center>
+				<button class="waves-effect" id="search">Traduzir</button>
+			</center>
+			<div id="results">
+				<br/>
+				<br/>
+				<span id="translation">Palavra ou expressão original:</span>
+				<table class="results" id="original"></table>	
+				<br/>
+				<span id="translation">Palavra ou expressão traduzida:</span>
+				<table class="results" id="translated"></table>	
+			</div>
+		</div>
+	</body>
+</html>

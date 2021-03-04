@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>English Swift</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="css/mcx.css" />
+		<link rel="stylesheet" href="css/NaoSelecionavel.css" />
+		<script src="cordova.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/mcx.js"></script>
+		<script src="js/standard.js"></script>
+		<script src="js/dialog.js"></script>
+		<script src="js/list.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/url.js"></script>
+		
+		<link rel="stylesheet" href="css/register.css" />
+		<script src="js/register.js"></script>
+		<script src="js/md5.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/connectycube@3.7.2/dist/connectycube.min.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<center>
+				<img src="img/icon.png" />
+				<p>English Swift</p>
+			</center>
+		</div>
+		<div id="register">
+			<form id="register">
+				<label>
+					<p>Qual seu nome completo?</p>
+					<input type="text" id="fullName" placeholder="Digite o seu nome completo" />
+				</label>
+				<br/><br/>
+				<label>
+					<p>Qual sua data de nascimento?</p>
+					<input type="tel" id="birthDate" placeholder="Digite a sua data de nascimento" />
+				</label>
+				<br/><br/>
+				<label>
+					<p>Qual seu número de celular? DDD + número</p>
+					<input type="tel" id="phone" placeholder="Digite o seu número de celular" />
+				</label>
+				<br/><br/>
+				<label>
+					<p>Qual seu e-mail?</p>
+					<input type="email" id="email" placeholder="Digite o seu e-mail" />
+				</label>
+				<br/><br/>
+				<label>
+					<p>Qual sua senha?</p>
+					<input type="password" id="password" placeholder="Digite a sua senha" />
+				</label>
+				<br/>
+				<p class="terms">Ao criar conta, você concordo com os nossos <span style="color: #1048c5;" onClick="useTerms();">termos de uso </span> e <span style="color: #1048c5;" onClick="privacy();">política de privacidade</span>.</p>
+				<br/>
+				<button class="waves-effect">Cadastrar</button>
+				<br/>
+				<p id="login">Entrar na conta agora</p>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+index =========> OK
+options =========> OK
+login  =========> OK
+register  =========> OK
+recoveryPassword | PHP
+home | PHP
+lessons/ (Se estiver naquela lição botão "Finalizar lição", senão "Voltar para lições")
+stories =========> OK
+dictation =========> OK
+revision =========> OK
+myAccount =========> OK
+translater =========> OK
+accountType =========> OK
+buyNow | PHP
+changePhoneNumber =========> OK
+changePassword =========> OK
+contact =========> OK
+useTerms =========> OK
+privacy =========> OK
+noInternet =========> OK
+maintance =========> OK
+update =========> OK
+
+Tutorial: lesson, dictation, revision
+
+home {
+	estudos
+	chat =========> OK
+	histórias =========> OK
+	prática =========> OK
+	configurações{ 
+		Minha conta =========> OK
+		Tradutor de palavras =========> OK
+		Tipo de conta =========> OK
+		Comprar agora
+		Indicar aplicativo =========> OK
+		Avaliar aplicativo =========> OK
+		Ajuda =========> OK
+		Sair da conta =========> OK
+		Termos de uso =========> OK
+		Política de privacidade =========> OK
+		Finalizar aplicativo =========> OK
+	}
+	
+      }
+
+LIÇÃO 178    OK
+LIÇÃO 179    OK
+LIÇÃO 180    OK
+LIÇÃO 181    OK
+LIÇÃO 182    OK
+LIÇÃO 183    OK
+LIÇÃO 184    OK
+LIÇÃO 185    OK
+LIÇÃO 186    OK
+LIÇÃO 187    OK
+LIÇÃO 188    OK
+LIÇÃO 189    OK
+LIÇÃO 190    OK
+LIÇÃO 191    OK
+
+TOTAL: 14
+
+<p onClick="speakInEnglishExercise(jQuery(this).text());" class="question"></p>
+			<p onClick="speakInEnglishExercise(jQuery(this).text());" class="answer"></p>

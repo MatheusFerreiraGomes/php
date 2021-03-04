@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>English Swift</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="css/mcx.css" />
+		<link rel="stylesheet" href="css/NaoSelecionavel.css" />
+		<script src="cordova.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/mcx.js"></script>
+		<script src="js/standard.js"></script>
+		<script src="js/list.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/dialog.js"></script>
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/myAccount.css" />
+		<script src="js/myAccount.js"></script>
+		<script src="js/url.js"></script>
+	</head>
+	<body class="NaoSelecionavel">
+		<div id="menu">
+			<table>
+				<tr>
+					<td id="icon">
+						<i class="fa fa-angle-left"></i>
+					</td>
+					<td class="text">Minha conta <span style='color: rgba(0, 0, 0, 0);'>afdffffffffafdfas</span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="myAccount">
+			<center>
+				<img id="picture" alt="Foto de perfil" />
+				<br/><br/>
+				<button id="changePicture" class="waves-effect">Alterar foto de perfil</button>
+				<br/>
+				<p id="name"></p>
+				<p id="email"></p>
+				<br/>
+				<p id="birthDate"></p>
+				<p id="phoneNumber"></p>
+				<br/>
+				<button id="changePhoneNumber" class="waves-effect">Alterar número de celular</button>
+				<br/><br/>
+				<button id="changePassword" class="waves-effect">Alterar senha</button>
+				<br/><br/>
+			</center>
+			
+			<form method="post" action="" enctype="multipart/form-data" id="changeProfile">
+		        <input type="file" id="file" name="file" onchange="changeProfile();" accept="image/*" style="display: none;"/>
+		    </form>
+		</div>
+	</body>
+</html>

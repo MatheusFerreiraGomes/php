@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>English Swift</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/icon.png" />
+		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="css/mcx.css" />
+		<link rel="stylesheet" href="css/NaoSelecionavel.css" />
+		<script src="cordova.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/mcx.js"></script>
+		<script src="js/standard.js"></script>
+		<script src="js/dialog.js"></script>
+		<script src="js/list.js"></script>
+		<script src="js/database.js"></script>
+		<script src="js/url.js"></script>
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/loader.css" />
+		<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/connectycube@3.7.2/dist/connectycube.min.js"></script>
+		<script src="js/home.js"></script>
+	</head>
+	<body class="NaoSelecionavel">
+		<div id="top">
+			<table>
+				<tr>
+					<td id="profile">
+						<center>
+							<img alt="Foto de perfil" />
+						</center>
+					</td>
+					<td id="name"></td>
+					<td id="refresh">
+						<center>
+							<i class="fa fa-refresh"></i>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="content" id="studies">
+			<p class="title">Estudos</p>
+			<br/>
+			<table>
+				<tr class="item" onClick="showLesson(1);">
+					<td class="icon">
+						<button><i class="fa fa-male"></i></button>
+					</td>
+					<td class="text">Estágio 1</td>
+				</tr>
+				<tr class="list" id="book1">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(2);">
+					<td class="icon">
+						<button><i class="fa fa-thumbs-o-up"></i></button>
+					</td>
+					<td class="text">Estágio 2</td>
+				</tr>
+				<tr class="list" id="book2">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(3);">
+					<td class="icon">
+						<button><i class="fa fa-calendar"></i></button>
+					</td>
+					<td class="text">Estágio 3</td>
+				</tr>
+				<tr class="list" id="book3">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(4);">
+					<td class="icon">
+						<button><i class="fa fa-fire"></i></button>
+					</td>
+					<td class="text">Estágio 4</td>
+				</tr>
+				<tr class="list" id="book4">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(5);">
+					<td class="icon">
+						<button><i class="fa fa-bath"></i></button>
+					</td>
+					<td class="text">Estágio 5</td>
+				</tr>
+				<tr class="list" id="book5">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(6);">
+					<td class="icon">
+						<button><i class="fa fa-check"></i></button>
+					</td>
+					<td class="text">Estágio 6</td>
+				</tr>
+				<tr class="list" id="book6">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(7);">
+					<td class="icon">
+						<button><i class="fa fa-gift"></i></button>
+					</td>
+					<td class="text">Estágio 7</td>
+				</tr>
+				<tr class="list" id="book7">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(8 );">
+					<td class="icon">
+						<button><i class="fa fa-envelope"></i></button>
+					</td>
+					<td class="text">Estágio 8</td>
+				</tr>
+				<tr class="list" id="book8">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(9);">
+					<td class="icon">
+						<button><i class="fa fa-info"></i></button>
+					</td>
+					<td class="text">Estágio 9</td>
+				</tr>
+				<tr class="list" id="book9">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(10);">
+					<td class="icon">
+						<button><i class="fa fa-print"></i></button>
+					</td>
+					<td class="text">Estágio 10</td>
+				</tr>
+				<tr class="list" id="book10">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(11);">
+					<td class="icon">
+						<button><i class="fa fa-folder"></i></button>
+					</td>
+					<td class="text">Estágio 11</td>
+				</tr>
+				<tr class="list" id="book11">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+				<tr class="item" onClick="showLesson(12);">
+					<td class="icon">
+						<button><i class="fa fa-bug"></i></button>
+					</td>
+					<td class="text">Estágio 12</td>
+				</tr>
+				<tr class="list" id="book12">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="space"></tr>
+			</table>
+		</div>
+		<div class="content" style="display: none;" id="chat">
+			<p class="title">Chat</p>
+			<br/>
+			<center>
+				<table id="search">
+					<tr>
+						<td id="search"><input type="text" placeholder="Procure alguém" id="search" /></td>
+						<td id="searchButton">Buscar <i class="fa fa-search"></i></td>
+					</tr>
+				</table>
+				<br/><br/>
+				<table id="menu">
+					<tr>
+						<td>
+							<button style="color: #1048c5;" id="online" onClick="selectOptionChat(this.id);"><i class="fa fa-user"></i><br/><span>Online (0)</span></button>
+						</td>
+						<td>
+							<button id="messages" onClick="selectOptionChat(this.id);"><i class="fa fa-comments-o"></i><br/><span>Mensagens</span></button>
+						</td>
+						<td>
+							<button id="calls" onClick="selectOptionChat(this.id);"><i class="fa fa-phone"></i><br/><span>Chamadas</span></button>
+						</td>
+					</tr>
+				</table>
+				<div class="content" id="online">
+					<div id="noneOnline" class="none">
+						<br/>
+						<div>
+							<center>
+								<div class="loader"></div>
+								<p>Procurando pessoas...</p>
+							</center>
+						</div>
+					</div>
+					<div class="full" id="fullOnline" style="display: none;">
+						<table></table>
+					</div>
+				</div>
+				<div class="content" id="messages" style="display: none;">
+					<div id="chargingMessages" class="none">
+						<br/>
+						<div>
+							<center>
+								<div class="loader"></div>
+								<p>Carregando mensagens...</p>
+							</center>
+						</div>
+					</div>
+					<div id="none" class="none" style="display: none;">
+						<div>
+							<center>
+								<i class="fa fa-comments-o"></i>
+								<p>Nenhuma mensagem ainda.</p>
+							</center>
+						</div>
+					</div>
+					<div class="full" id="fullMessages" style="display: none;">
+						<table id="list"></table>
+					</div>
+				</div>
+				<div class="content" id="calls" style="display: none;">
+					<div id="none" class="none">
+						<div>
+							<center>
+								<i class="fa fa-cogs"></i>
+								<p>Em desenvolvimento.</p>
+							</center>
+						</div>
+					</div>
+				</div>
+			</center>
+			<div id="resultsSearch">
+				<p><span id="results"></span> <span id="cancel">CANCELAR PESQUISA</span></p>
+				<table id="list">
+				
+				</table>
+			</div>
+			<div id="loading" style="display: block;">
+				<div>
+					<center>
+						<div class="loader"></div>
+						<p>Conectando no servidor...</p>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="content" style="display: none;" id="stories">
+			<p class="title">Histórias</p>
+			<p style="font-family: RobotoRegular;font-size: 1.3rem;">Aqui você poderá treinar o seu ouvido(listening) para poder ter um aumento de progresso bem maior e rápido para a conversação.</p>
+			<table></table>
+		</div>
+		<div class="content" style="display: none;" id="practise">
+			<p class="title">Prática</p>
+			<br/>
+			<table id="menu">
+				<tr>
+					<td>
+						<button style="color: #1048c5;" id="dictation" onClick="selectOptionPractise(this.id);"><i class="fa fa-pencil"></i><br/>Ditado</button>
+					</td>
+					<td>
+						<button id="question" onClick="selectOptionPractise(this.id);"><i class="fa fa-question"></i><br/>Perguntas</button>
+					</td>
+				</tr>
+			</table>
+			<div id="dictation">
+				<p style="font-family: RobotoRegular;font-size: 1.3rem;">Selecione de qual estágio você vai querer o ditado.</p>
+				<table>
+					<tr class="item" onClick="showDictations(1);">
+						<td class="icon">
+							<button><i class="fa fa-male"></i></button>
+						</td>
+						<td class="text">Estágio 1</td>
+					</tr>
+					<tr class="list" id="book1">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(2);">
+						<td class="icon">
+							<button><i class="fa fa-thumbs-o-up"></i></button>
+						</td>
+						<td class="text">Estágio 2</td>
+					</tr>
+					<tr class="list" id="book2">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(3);">
+						<td class="icon">
+							<button><i class="fa fa-calendar"></i></button>
+						</td>
+						<td class="text">Estágio 3</td>
+					</tr>
+					<tr class="list" id="book3">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(4);">
+						<td class="icon">
+							<button><i class="fa fa-fire"></i></button>
+						</td>
+						<td class="text">Estágio 4</td>
+					</tr>
+					<tr class="list" id="book4">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(5);">
+						<td class="icon">
+							<button><i class="fa fa-bath"></i></button>
+						</td>
+						<td class="text">Estágio 5</td>
+					</tr>
+					<tr class="list" id="book5">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(6);">
+						<td class="icon">
+							<button><i class="fa fa-check"></i></button>
+						</td>
+						<td class="text">Estágio 6</td>
+					</tr>
+					<tr class="list" id="book6">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(7);">
+						<td class="icon">
+							<button><i class="fa fa-gift"></i></button>
+						</td>
+						<td class="text">Estágio 7</td>
+					</tr>
+					<tr class="list" id="book7">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(8);">
+						<td class="icon">
+							<button><i class="fa fa-envelope"></i></button>
+						</td>
+						<td class="text">Estágio 8</td>
+					</tr>
+					<tr class="list" id="book8">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(9);">
+						<td class="icon">
+							<button><i class="fa fa-info"></i></button>
+						</td>
+						<td class="text">Estágio 9</td>
+					</tr>
+					<tr class="list" id="book9">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(10);">
+						<td class="icon">
+							<button><i class="fa fa-print"></i></button>
+						</td>
+						<td class="text">Estágio 10</td>
+					</tr>
+					<tr class="list" id="book10">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(11);">
+						<td class="icon">
+							<button><i class="fa fa-folder"></i></button>
+						</td>
+						<td class="text">Estágio 11</td>
+					</tr>
+					<tr class="list" id="book11">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showDictations(12);">
+						<td class="icon">
+							<button><i class="fa fa-bug"></i></button>
+						</td>
+						<td class="text">Estágio 12</td>
+					</tr>
+					<tr class="list" id="book12">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+				</table>
+			</div>
+			<div id="question" style="display: none;">
+				<p style="font-family: RobotoRegular;font-size: 1.3rem;">Selecione de qual estágio você quer revisar perguntas e respostas.</p>
+				<table>
+					<tr class="item" onClick="showQuestions(1);">
+						<td class="icon">
+							<button><i class="fa fa-male"></i></button>
+						</td>
+						<td class="text">Estágio 1</td>
+					</tr>
+					<tr class="list" id="book1">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(2);">
+						<td class="icon">
+							<button><i class="fa fa-thumbs-o-up"></i></button>
+						</td>
+						<td class="text">Estágio 2</td>
+					</tr>
+					<tr class="list" id="book2">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(3);">
+						<td class="icon">
+							<button><i class="fa fa-calendar"></i></button>
+						</td>
+						<td class="text">Estágio 3</td>
+					</tr>
+					<tr class="list" id="book3">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(4);">
+						<td class="icon">
+							<button><i class="fa fa-fire"></i></button>
+						</td>
+						<td class="text">Estágio 4</td>
+					</tr>
+					<tr class="list" id="book4">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(5);">
+						<td class="icon">
+							<button><i class="fa fa-bath"></i></button>
+						</td>
+						<td class="text">Estágio 5</td>
+					</tr>
+					<tr class="list" id="book5">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(6);">
+						<td class="icon">
+							<button><i class="fa fa-check"></i></button>
+						</td>
+						<td class="text">Estágio 6</td>
+					</tr>
+					<tr class="list" id="book6">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(7);">
+						<td class="icon">
+							<button><i class="fa fa-gift"></i></button>
+						</td>
+						<td class="text">Estágio 7</td>
+					</tr>
+					<tr class="list" id="book7">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(8);">
+						<td class="icon">
+							<button><i class="fa fa-envelope"></i></button>
+						</td>
+						<td class="text">Estágio 8</td>
+					</tr>
+					<tr class="list" id="book8">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(9);">
+						<td class="icon">
+							<button><i class="fa fa-info"></i></button>
+						</td>
+						<td class="text">Estágio 9</td>
+					</tr>
+					<tr class="list" id="book9">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+					<tr class="item" onClick="showQuestions(10);">
+						<td class="icon">
+							<button><i class="fa fa-print"></i></button>
+						</td>
+						<td class="text">Estágio 10</td>
+					</tr>
+					<tr class="list" id="book10">
+						<td colspan="2"></td>
+					</tr>
+					<tr class="space"></tr>
+				</table>
+			</div>
+		</div>
+		</div>
+		<div class="content" style="display: none;" id="settings">
+			<p class="title">Configurações</p>
+			<br/>
+			<table>
+				<tr id="myAccount">
+					<td class="icon"><i class="fa fa-user-circle-o"></i></td>
+					<td class="text">Minha conta</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="translater">
+					<td class="icon"><i class="fa fa-globe"></i></td>
+					<td class="text">Tradutor de palavras</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="accountType">
+					<td class="icon"><i class="fa fa-usd"></i></td>
+					<td class="text">Tipo de conta</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="buyNow">
+					<td class="icon"><i class="fa fa-shopping-cart"></i></td>
+					<td class="text">Comprar agora</td>
+				</tr>
+				<tr id="spaceBuyNow" style="height: 1.5rem;"></tr>
+				<tr id="share">
+					<td class="icon"><i class="fa fa-share-alt"></i></td>
+					<td class="text">Indicar aplicativo</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="rate">
+					<td class="icon"><i class="fa fa-star-o"></i></td>
+					<td class="text">Avaliar aplicativo</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="help">
+					<td class="icon"><i class="fa fa-question"></i></td>
+					<td class="text">Ajuda</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="logout">
+					<td class="icon"><i class="fa fa-sign-out"></i></td>
+					<td class="text">Sair da conta</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="useTerms">
+					<td class="icon"><i class="fa fa-file-text-o"></i></td>
+					<td class="text">Termos de uso</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="privacy">
+					<td class="icon"><i class="fa fa-file-text-o"></i></td>
+					<td class="text">Política de privacidade</td>
+				</tr>
+				<tr style="height: 1.5rem;"></tr>
+				<tr id="turnOff">
+					<td class="icon"><i class="fa fa-power-off"></i></td>
+					<td class="text">Finalizar aplicativo</td>
+				</tr>
+				<tr style="height: 3rem;"></tr>
+			</table>
+			<p id="version"></p>
+		</div>
+		<nav id="menu">
+			<table>
+				<tr>
+					<td id="studies" onClick="setPage(this.id);"><button class="selected"><i class="fa fa-graduation-cap"></i><br/>Estudos</button></td>
+					<td id="chat" onClick="setPage(this.id);"><button class="unselected"><i class="fa fa-comment"></i><br/>Chat</button></td>
+					<td id="stories" onClick="setPage(this.id);"><button class="unselected"><i class="fa fa-book"></i><br/>Histórias</button></td>
+					<td id="practise" onClick="setPage(this.id);"><button class="unselected"><i class="fa fa-bullhorn"></i><br/>Prática</button></td>
+					<td id="settings" onClick="setPage(this.id);"><button class="unselected"><i class="fa fa-cog"></i><br/>Config.</button></td>					
+				</tr>
+			</table>
+		</nav>
+		<div id="conversation">
+			<div id="chat">
+				<div id="top">
+					<table>
+						<tr>
+							<td rowspan="2" id="back"><i class="fa fa-angle-left"></i></td>
+							<td rowspan="2" id="picture"><img alt="Foto de perfil" /></td>
+							<td id="nameUser"></td>
+							<td id="options" rowspan="2"><i class="fa fa-ellipsis-v"></i></td>
+						</tr>
+						<tr>
+							<td id="info">Online</td>
+						</tr>
+					</table>
+				</div>
+				<div id="messages">
+				<div id="down" class="waves-effect" onClick="goDown();"><i class="fa fa-angle-double-down"></i></div>
+				<br/>
+				<!--<center>
+					<p class="date">01/02/2021</p>
+					<br/>
+				</center>
+				<p class="received">Olá, tudo bem? Está sumido, vamos conversar?</p>
+				<p class="send">Olá, tudo bem? Está sumido, vamos conversar?</p>-->
+				</div>
+				<div id="message">
+					<table>
+						<tr>
+							<td id="emojis">
+								<center><img src="img/emoji.png"/></center>
+							</td>
+							<td id="field">
+								<form id="sendMessage">
+									<input type="text" id="message" placeholder="Digite uma mensagem..." />
+								</form>
+							</td>
+							<td id="send">Enviar</td>
+						</tr>
+					</table>
+				</div>
+				<div id="emojis">
+					<table id="listCategory">
+						<tr>
+							<td style="border-bottom: 4px solid #1048c5;" id="hands" class="option" onClick="selectOptionEmoji(this.id);"><i class="fa fa-thumbs-o-up"></i></td>
+							<td class="option" id="faces" onClick="selectOptionEmoji(this.id);"><i class="fa fa-smile-o"></i></td>
+							<td class="option" id="hearts" onClick="selectOptionEmoji(this.id);"><i class="fa fa-heart"></i></td>
+							<td class="option" id="pets" onClick="selectOptionEmoji(this.id);"><i class="fa fa-paw"></i></td>
+							<td class="option" id="trees" onClick="selectOptionEmoji(this.id);"><i class="fa fa-tree"></i></td>
+							<td class="option" id="foods" onClick="selectOptionEmoji(this.id);"><i class="fa fa-cutlery"></i></td>
+							<td class="option" id="transports" onClick="selectOptionEmoji(this.id);"><i class="fa fa-car"></i></td>
+							<td class="option" id="clothes" onClick="selectOptionEmoji(this.id);"><i class="fa fa-briefcase"></i></td>
+							<td id="close">FECHAR</td>
+						</tr>
+					</table>
+					<div id="hands" class="emojis"><center></center></div>
+					<div id="faces" class="emojis" style="display: none;"><center></center></div>
+					<div id="hearts" class="emojis" style="display: none;"><center></center></div>
+					<div id="pets" class="emojis" style="display: none;"><center></center></div>
+					<div id="trees" class="emojis" style="display: none;"><center></center></div>
+					<div id="foods" class="emojis" style="display: none;"><center></center></div>
+					<div id="transports" class="emojis" style="display: none;"><center></center></div>
+					<div id="clothes" class="emojis" style="display: none;"><center></center></div>
+				</div>
+				
+			</div>
+		</div>
+		<audio src="sounds/receivedMessage.mp3" id="receivedMessage" type="audio/mpeg"></audio>
+	</body>
+</html>
+
+<!--
+	LIÇÕES
+	
+	Estágio 1: 1-9
+	Estágio 2: 10-24
+	Estágio 3: 25-40
+	Estágio 4: 41-60
+	Estágio 5: 61-77
+	Estágio 6: 78-94
+	Estágio 7: 95-111
+	Estágio 8: 112-126
+	Estágio 9: 127-145
+	Estágio 10: 146-163
+	Estágio 11: 164-177
+	Estágio 12: 178-191
+	
+	DITADOS
+	
+	Estágio 1: 1
+	Estágio 2: 2-5
+	Estágio 3: 6-21
+	Estágio 4: 22-35
+	Estágio 5: 36-48
+	Estágio 6: 49-60
+	Estágio 7: 61-73
+	Estágio 8: 74-83
+	Estágio 9: 84-99
+	Estágio 10: 100-114
+	Estágio 11: 115-122
+	Estágio 12: 123-130
+
+-->

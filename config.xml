@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.es.english_swift" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>English Swift</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-windowSoftInputMode" value="adjustPan" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <preference name="android-targetSdkVersion" value="23" />
+	<preference name="android-minSdkVersion" value="19" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external" />
+    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
+    <preference name="KeepRunning" value="true" />
+    <preference name="NavigationBarBackgroundColor" value="#000000" />
+	
+	
+	<plugin source="git" spec="https://github.com/whiteoctober/cordova-plugin-app-version" />
+    <plugin source="git" spec="https://github.com/katzer/cordova-plugin-background-mode" />
+    <plugin source="git" spec="https://github.com/nchutchind/cordova-plugin-app-launcher" />
+    <plugin source="git" spec="https://github.com/WebsiteBeaver/CordovaCall" />
+    <plugin source="git" spec="https://github.com/dpa99c/cordova-custom-config" />
+    <plugin source="git" spec="https://github.com/Anuj-Raghuvanshi/cordova-clipboard-plugin" />
+	<plugin source="git" spec="https://github.com/VirtuoWorks/CanvasCameraPlugin.git" />	
+	<plugin source="git" spec="https://github.com/wnyc/cordova-plugin-wakeuptimer.git" />	
+	<plugin name="onesignal-cordova-plugin" source="npm" spec="2.4.5" />
+    <plugin name="cordova-plugin-vsms-socialsharing" source="npm" />
+    <plugin name="cordova-plugin-listpicker" source="npm" />
+    <plugin name="cordova-plugin-permission" source="npm" />
+    <plugin name="cordova-plugin-screen-orientation" source="npm" version="1.4.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.3.3" />
+	<plugin name="cordova-plugin-whitelist" spec="^1.3.4" />
+	<plugin name="cordova-plugin-fullscreen" spec="^1.3.0" />
+	<plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
+    <plugin name="cordova-plugin-device" spec="^2.0.3" />
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.3" />
+    <plugin name="cordova-plugin-navigationbar-color" spec="^0.1.0" />
+    <plugin name="cordova-plugin-pdialog" spec="^2.0.1" />
+    <plugin name="cordova-plugin-local-notification" spec="^0.9.0-beta.2" />
+    <plugin name="cordova-plugin-android-softinputmode" spec="^0.2.1" />
+    <plugin name="cordova-open-native-settings" spec="^1.5.2" />
+    <plugin name="cordova-plugin-cleartext" spec="^1.0.0" />
+    <plugin name="cordova-plugin-actionsheet" spec="^2.3.3" />
+    <plugin name="cordova-plugin-iosrtc" spec="^6.0.14" />
+    <plugin name="cordova-plugin-x-toast" spec="^2.7.2" />
+	<plugin name="cordova-plugin-tts" spec="^0.2.3" />
+    <plugin name="cordova-plugin-headsetdetection" spec="^3.0.0" />
+    <plugin name="cordova-plugin-android-permissions" spec="^1.1.0" />
+    <plugin name="cordova-plugin-camera" spec="^4.1.0" />
+    <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />	
+    <plugin name="cordova-plugin-spinner-dialog" spec="^1.3.1" />	
+    <plugin name="cordova-plugin-datepicker" spec="^0.9.3" />	
+    <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />	
+    <plugin name="cordova-launch-review" spec="^4.0.1" />	
+    <plugin name="cordova-plugin-vibration" spec="^3.1.1" />	
+    <plugin name="cordova-plugin-inappbrowser" spec="^4.1.0" />	
+	
+     <platform name="android">
+        <platform name="android">
+            <custom-config-file mode="merge" parent="/*" target="app/src/main/AndroidManifest.xml">
+                <uses-permission android:name="android.permission.CAMERA" />
+                <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+                <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+                <uses-permission android:name="android.permission.RECORD_AUDIO" />
+                <uses-feature android:name="android.hardware.camera.autofocus" />
+            </custom-config-file>
+        </platform>
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/beaver.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_notification.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_os_notification_fallback_white_24dp.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_stat_onesignal_default.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_onesignal_large_icon_default.png" />
+        <icon density="ldpi" src="img/icons/android/ldpi.png" />
+        <icon density="mdpi" src="img/icons/android/mdpi.png" />
+        <icon density="hdpi" src="img/icons/android/hdpi.png" />
+        <icon density="xhdpi" src="img/icons/android/xhdpi.png" />
+        <icon density="xxhdpi" src="img/icons/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="img/icons/android/xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <preference name="UseSwiftLanguageVersion" value="4.0" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_notification.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_os_notification_fallback_white_24dp.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_stat_onesignal_default.png" />
+        <resource-file src="img/ic_notification.png" target="app/src/main/res/drawable/ic_onesignal_large_icon_default.png" />
+        <icon height="29" src="img/icons/ios/icon29.png" width="29" />
+        <icon height="40" src="img/icons/ios/icon40.png" width="40" />
+        <icon height="50" src="img/icons/ios/icon50.png" width="50" />
+        <icon height="57" src="img/icons/ios/icon57.png" width="57" />
+        <icon height="60" src="img/icons/ios/icon60.png" width="60" />
+        <icon height="80" src="img/icons/ios/icon80.png" width="80" />
+        <icon height="114" src="img/icons/ios/icon114.png" width="114" />
+        <icon height="120" src="img/icons/ios/icon120.png" width="120" />
+        <icon height="180" src="img/icons/ios/icon180.png" width="180" />
+    </platform>
+    <access origin="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <access origin="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
+    <access origin="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <access origin="https://viacep.com.br/ws/*" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <access origin="https://api.bit6.com/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="fb://profile/*" />
+    <allow-intent href="fb://page/*" />
+    <allow-intent href="twitter://*" />
+    <allow-intent href="facebook:*" />
+    <allow-intent href="facebook://*" />
+    <allow-intent href="fb-messenger://*" />
+    <allow-intent href="instagram:*" />
+    <allow-intent href="instagram://*" />
+    <allow-intent href="market://*" />
+    <allow-intent href="whatsapp://*" />
+    <allow-intent href="itms-apps://*" />
+</widget>
